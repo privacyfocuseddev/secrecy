@@ -260,18 +260,13 @@ a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .sidebar {
         display: none;
     }
 
     .main-content {
         max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-content {
         padding: 1.5rem;
     }
 
@@ -298,7 +293,7 @@ a:hover {
     cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }

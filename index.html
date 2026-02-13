@@ -3,208 +3,631 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Secrecy Documentation</title>
+    <title>Privacy Policy - Secrecy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header class="site-header">
-        <h1>🔒 Secrecy Documentation</h1>
-        <div class="subtitle">Privacy Policy</div>
+        <div class="header-content">
+            <img src="logo.png" alt="Secrecy Logo" class="logo">
+            <div class="header-text">
+                <h1>Secrecy</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-tab active">Privacy Policy</a>
+                <a href="terms.html" class="nav-tab">Terms of Service</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon"></span>
+            </button>
+        </div>
     </header>
 
     <div class="container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            <h3>Navigation</h3>
-            <ul class="nav-list">
-                <li><a href="#overview" class="active">Overview</a></li>
-                <li><a href="#information-collect">Information We Collect</a></li>
-                <li><a href="#how-we-use">How We Use Information</a></li>
-                <li><a href="#encryption">End-to-End Encryption</a></li>
-                <li><a href="#sharing">Information Sharing</a></li>
-                <li><a href="#external">External Sharing</a></li>
-                <li><a href="#security">Data Storage & Security</a></li>
-                <li><a href="#retention">Data Retention</a></li>
-                <li><a href="#rights">Your Rights</a></li>
-                <li><a href="#children">Children's Privacy</a></li>
-                <li><a href="#international">International Transfers</a></li>
-                <li><a href="#changes">Policy Changes</a></li>
-                <li><a href="#third-party">Third-Party Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#compliance">Legal Compliance</a></li>
-            </ul>
-        </aside>
-
         <!-- Main Content -->
         <main class="main-content">
-            <h1>Privacy Policy for Secrecy</h1>
+            <h1>SECRECY PRIVACY POLICY</h1>
+            <div class="last-updated">Effective: February 10, 2026</div>
             <div class="last-updated">Last updated: February 10, 2026</div>
 
-            <div class="callout callout-success" id="overview">
-                <strong>🛡️ Your Privacy Matters</strong>
-                <p>Secrecy is an encryption tool that allows you to securely encrypt content on your device and share it via any external app. All encryption happens locally. We only store your public key for account management—your private keys never leave your device, and we cannot read your encrypted content.</p>
-            </div>
+            <!-- Navigation Links -->
+            <nav class="page-nav">
+                <ol class="nav-links">
+                    <li><a href="#overview">Welcome</a></li>
+                    <li><a href="#about-secrecy">About Secrecy</a></li>
+                    <li>
+                        <a href="#information-collect">Information We Collect</a>
+                        <ul>
+                            <li><a href="#info-provide">Information You Provide</a></li>
+                            <li><a href="#info-auto">Automatically Collected Information</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#how-we-use">How We Use Your Information</a></li>
+                    <li><a href="#encryption">How Encryption Works</a></li>
+                    <li><a href="#sharing">How We Disclose Your Information</a></li>
+                    <li><a href="#retention">Data Retention</a></li>
+                    <li><a href="#rights">How to Control Your Privacy</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#international">International Data Transfers</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#compliance">Legal Compliance and Regulatory Standards</a></li>
+                    <li><a href="#changes">Changes to This Privacy Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
+            </nav>
 
-            <h2>What is Secrecy?</h2>
-            <p>Secrecy is <strong>not a messaging app</strong>. It is an encryption tool that provides:</p>
-            <ul>
-                <li><strong>Local Encryption:</strong> Encrypt content (secrets, notes, messages, files) on your device using public key cryptography</li>
-                <li><strong>Public Key Infrastructure:</strong> Each user has a public/private key pair. You encrypt content using someone's public key, and only their private key can decrypt it</li>
-                <li><strong>External Sharing:</strong> Share encrypted content via any app you choose (WhatsApp, Telegram, SMS, email, etc.)</li>
-                <li><strong>Secure Storage:</strong> Store your encrypted content in the cloud while maintaining zero-knowledge security</li>
-                <li><strong>User Directory:</strong> Find other users by username to obtain their public keys for encryption</li>
-            </ul>
-            <p>You remain in full control of your private keys and encrypted content at all times.</p>
+            <h2 id="overview">Welcome</h2>
+            <p>
+                This Privacy Policy describes how we collect, use, store, protect, and share 
+                your personal information when you use our mobile application and related services. 
+                This policy explains what data we collect, why we collect it, how we use it, 
+                and your rights regarding your information.
+            </p>
 
-            <h2 id="information-collect">1. Information We Collect</h2>
+            <h2 id="about-secrecy">About Secrecy</h2>
+            <p>
+                Secrecy is an application that allows you to securely encrypt content on your device
+                and share it via any external app of your choice. All encryption and storage happens 
+                locally on your device. We DO NOT store your encrypted secrets, they remain exclusively 
+                on your device. We only store your account information (email, name), your public 
+                key for user discovery, and device information to protect your account from unauthorized access.
+            </p>
             
-            <h3>1.1 Information You Provide</h3>
+            <p>Secrecy provides:</p>
             <ul>
-                <li><strong>Account Information:</strong> Email address, username</li>
-                <li><strong>Profile Information:</strong> Full name, Bio</li>
-                <li><strong>Encrypted Content:</strong> Your secrets and any other content you use within the app such as notes, bookmarks, etc. (encrypted on your device, we do not have access to your private keys stored in your device)</li>
+                <li><strong>Local Encryption:</strong> Encrypt content (secrets, notes, messages) on your 
+                    device using public key cryptography
+                </li>
+                <li><strong>Local Storage:</strong> All your encrypted secrets are stored exclusively on 
+                    your device, never uploaded to our servers
+                </li>
+                <li><strong>Public Key Infrastructure:</strong> Each user has a public/private key pair. 
+                    You encrypt content using someone's public key, and only their private key can decrypt it
+                </li>
+                <li><strong>External Sharing:</strong> Share encrypted content through any installed app 
+                    on your device using the application share feature or any other mechanism of your choice.
+                </li>
+                <li><strong>User Directory:</strong> Find other users by username to obtain their public 
+                    keys for encryption
+                </li>
+            </ul>
+            <p>
+                All your secrets remain on your device. We never have access to your private keys 
+                or encrypted content.
+            </p>
+
+            <h2 id="information-collect">Information We Collect</h2>
+            
+            <h3 id="info-provide">Information You Provide</h3>
+            <ul>
+                <li><strong>Account Information:</strong> When you create an account, 
+                    we collect your email address and name to identify you and make 
+                    your account unique among others. This will help you manage your account 
+                    on different devices of your choice. Your profile information, such as name and bio, 
+                    can be shared with others to allow other users to make connection requests with you and
+                    maintain relationships and public key discovery. For instance, you can choose a privacy
+                    option via menu view, and if your account is set to public, then any user can see your profile
+                    including your full name, bio, and unique username of your account, and they can send a 
+                    friend request to you. If your account is set
+                    to private, then any user can discover your profile and can see your full name, bio, and unique username 
+                    of your account, but they cannot discover your public key for content encryption for you. 
+                    They should be in your friend list in order to discover your public key. 
+                    Therefore, they can encrypt content and share it with you. 
+                </li>
             </ul>
 
-            <h3>1.2 Automatically Collected Information</h3>
+            <h3 id="info-auto">Automatically Collected Information</h3>
             <ul>
-                <li><strong>Device Information:</strong> Device ID for security purposes (to help protect your account from unauthorized access)</li>
-                <li><strong>App Activity:</strong> Login timestamps for security monitoring</li>
-                <li><strong>Public Keys:</strong> Your public encryption keys (used by others to encrypt content for you). Your private keys remain on your device and are never collected or transmitted</li>
+                <li>
+                    <strong>Device Information:</strong> When you create an account, your device ID will be
+                    used for security purposes to help protect your account from unauthorized access. For instance,
+                    when you are logged into your account on a device, if someone logs in using your account credentials 
+                    on any other device then your device ID will be used to identify your currently active session on
+                    your device. Therefore, we can notify you regarding unauthorized access to your account and can block that attempt
+                    to access your account on a new device. Therefore, an account can only be logged into one device at a time. You cannot
+                    use your account on multiple devices at the same time.
+                </li>
+                <li><strong>App Activity:</strong> Login timestamps for security purposes. Your login activity, 
+                    for instance, which device you log into and timestamp, helps us to protect your account 
+                    from unauthorized activities on your account. You can access this information via the application
+                    so you will know on which devices your account has been logged into and used.</li>
+                <li>
+                    <strong>Public Keys:</strong> Your public encryption keys (used by others to encrypt 
+                    content for you). Your private keys remain on your device and are never collected or 
+                    transmitted. Public keys are public. They will not harm you! Public keys are used 
+                    to encrypt content for you. Therefore, you can decrypt the content using your private 
+                    key stored on your device when you receive it. You can rotate your keys occasionally so your 
+                    public key and private key will be changed. When you rotate your keys, your new public key 
+                    will be stored on our servers and replace the old one, while your old private key is replaced 
+                    by the new private key on your device. All your existing encrypted content is automatically 
+                    re-encrypted with the new key to ensure you don't lose access to your data.
+                </li>
             </ul>
 
-            <h2 id="how-we-use">2. How We Use Your Information</h2>
-            <p>We use the information we collect to:</p>
-            <ul>
-                <li>Authenticate and manage your account</li>
-                <li>Store your public keys to enable encrypted content sharing between users</li>
-                <li>Store your encrypted content securely on our servers</li>
-                <li>Provide encryption and decryption functionality</li>
-                <li>Enable you to find other users by username for secure communication</li>
-                <li>Send important service notifications (app updates, security alerts)</li>
-            </ul>
+            <h3 id="info-not-collect">What We DON'T Collect</h3>
+            <p>
+                We do NOT collect or store your encrypted secrets, notes, messages, or 
+                any content you encrypt on your device. All your encrypted content 
+                remains exclusively on your device. Feel free to encrypt content and 
+                confidently share it with others using any applications installed on 
+                your device. 
+            </p>
 
-            <h2 id="encryption">3. How Encryption Works</h2>
-            <div class="callout callout-warning">
-                <strong>🔐 Local Encryption with Public Key Infrastructure</strong>
-                <ul>
-                    <li>All content is encrypted locally on your device before storage or sharing</li>
-                    <li>We use industry-standard encryption: AES-256-GCM and X25519 (ECDH)</li>
-                    <li>Your private keys are stored securely on your device and never leave it</li>
-                    <li>We only store your public keys for encryption purposes</li>
-                    <li>When you encrypt content for someone, it uses their public key</li>
-                    <li>Only the recipient with the corresponding private key can decrypt the content</li>
-                    <li>We cannot decrypt or read your encrypted content</li>
-                    <li>If you lose your private key, we cannot recover your encrypted data</li>
-                </ul>
-            </div>
+            <h2 id="how-we-use">How We Use Your Information</h2>
+            <p>
+                When you create an account, you can verify your identity by authenticating using your email
+                and password. Once you are authenticated, you will be subject to two-step verification 
+                as you should verify your login via a second method added to protect your account from 
+                unauthorized access. A one-time OTP code will be sent to your email so you can use it 
+                to verify and access and manage your account. Your information (email) will be used 
+                for authentication and account verification purposes, such as sending login verification codes 
+                and account-related security notifications.
+            </p>
+            <p>
+                We store your public keys to enable other users to encrypt content for you. Therefore, you 
+                can decrypt the content using your private key stored only on your device. Your public key 
+                can be discovered by other users based on your privacy settings. If you set your privacy 
+                to public then any user can discover your public key and can encrypt content for you. 
+                If you set your privacy to private then no one can discover your public key other than 
+                the users (friends) connected with you already.
+            </p>
+            <p>
+                Your information (name) enables other users to find you and make connections with you as well as 
+                allowing you to find other users by using their information (name) and make connections with them. Your information 
+                (bio) is optional and is used for your profile to showcase your identity with others.
+            </p>
+            <p>
+                You can only use your account on one device at a time. 
+                If you want to change your device then your session on the previous 
+                device will be revoked. For this purpose, we collect your device information 
+                to keep track of whether your login session is active on a single device.
+            </p>
+            <p>
+                We do not route your encrypted content (secrets, notes, messages, or any other) through 
+                our servers. You may share them via any application installed on your device with
+                confidence as they cannot recover the original content from the encrypted blob. 
+            </p>
 
-            <h2 id="sharing">4. Information Sharing</h2>
+            <h2 id="encryption">How Encryption Works</h2>
+            <p>
+                When you create an account, a new public/private key pair will be generated and stored on your 
+                device. Only the public key will be sent to our servers for user discovery. Your private key remains 
+                only on your device. All content is encrypted and stored locally on your device using your private 
+                key.
+            </p>
+            <p>
+                Your encrypted content NEVER leaves your device except when you manually share it via external 
+                apps. You can only encrypt content for yourself using your public key. Therefore, no one can decrypt 
+                it as they do not have access to your private key. When you encrypt content for other users, 
+                you cannot decrypt the content as you do not have access to their private key.
+            </p>
+            <p>
+                We use industry-standard encryption: AES-256-GCM and X25519 (ECDH).
+            </p>
+            <p>
+                We never have access to your encrypted content since it never reaches our servers. If you lose 
+                your device or private key (by clearing app cache or data), we cannot recover your encrypted data. 
+                You will lose your encrypted information entirely as it cannot be recovered in any other way.
+            </p>
+
+            <h2 id="sharing">How We Disclose Your Information</h2>
             <p><strong>We do not sell, rent, or share your personal information with third parties</strong>, except:</p>
             <ul>
-                <li><strong>Service Providers:</strong> Supabase (database hosting and authentication) - operates under strict data protection agreements. They only have access to encrypted data and public keys</li>
-                <li><strong>Legal Requirements:</strong> If required by law, court order, or government regulation (note: we can only provide encrypted data and account information, not decrypted content)</li>
-                <li><strong>Public Keys:</strong> Your public key may be accessible to other users who search for your username, as this is necessary for them to encrypt content intended for you</li>
-            </ul>
-            <p><strong>What we DON'T do:</strong></p>
-            <ul>
-                <li>We do not facilitate or monitor content sharing between users</li>
-                <li>We do not have access to content you share via external apps</li>
-                <li>We cannot see what content you encrypt or who you share it with via external channels</li>
-            </ul>
-
-            <h2 id="external">5. How Content Sharing Works</h2>
-            <p><strong>Important:</strong> Secrecy is not a messaging app. You encrypt content on your device and share it through external apps of your choice.</p>
-            <p>When you share encrypted content:</p>
-            <ul>
-                <li>Content is encrypted locally on your device using the recipient's public key</li>
-                <li>You choose how to share the encrypted content (WhatsApp, SMS, email, Telegram, or any other app)</li>
-                <li>Secrecy does not transmit or route your encrypted content</li>
-                <li>The external apps you use have their own privacy policies</li>
-                <li>We do not control, monitor, or have access to content shared via external apps</li>
-                <li>Only the intended recipient with the correct private key can decrypt the content</li>
-                <li>Even if intercepted, the encrypted content cannot be read without the recipient's private key</li>
+                <li><strong>Service Providers:</strong> Supabase as a service provider is used to provide 
+                    authentication and database hosting. They have their own 
+                    <a href="https://supabase.com/privacy">privacy policy</a>. They only have access to 
+                    your account information (email, username, full name, bio, public keys, device ID). 
+                    They do NOT have access to your private keys or encrypted secrets. 
+                </li>
+                <li><strong>Legal Requirements:</strong> If required by law, court order, or government 
+                    regulation, we can share your information such as email, username, full name, bio, public keys 
+                    or device ID as we only store these on our servers. We cannot share your private key or 
+                    any of your encrypted content stored on your device as we do NOT store this information on our
+                    servers.
+                </li>
+                <li><strong>User-Initiated Sharing:</strong> When you explicitly share encrypted secrets 
+                    via external apps such as instant messaging apps, email clients, or any other applications, 
+                    you provide consent for your data sharing. We are not collecting any of your content sharing 
+                    information via other applications. 
+                </li>
             </ul>
 
-            <h2 id="security">6. Data Storage and Security</h2>
-            <p><strong>What We Store:</strong></p>
-            <ul>
-                <li><strong>Account Data:</strong> Email address, username, full name, bio</li>
-                <li><strong>Public Keys:</strong> Your public encryption keys (accessible to other users)</li>
-                <li><strong>Encrypted Content:</strong> Your secrets, notes, and other content (encrypted by you, unreadable by us)</li>
-                <li><strong>Device ID:</strong> For security and account protection</li>
-            </ul>
-            <p><strong>Security Measures:</strong></p>
-            <ul>
-                <li><strong>Storage Location:</strong> Data stored on secure Supabase infrastructure (hosted on AWS)</li>
-                <li><strong>Encryption:</strong> All encrypted content is stored encrypted at rest and transmitted encrypted over TLS</li>
-                <li><strong>Private Key Storage:</strong> Your private keys are stored exclusively on your device in Android Keystore (hardware-backed security when available)</li>
-                <li><strong>Zero-Knowledge:</strong> We cannot decrypt your content as we never have access to your private keys</li>
-                <li><strong>Access Controls:</strong> Strict database access rules and row-level security policies</li>
-                <li><strong>Compliance:</strong> GDPR and SOC 2 compliant infrastructure</li>
-            </ul>
+            <h2 id="retention">Data Retention</h2>
+            <p>
+                While your account remains active and you continue to use Secrecy, we retain your account 
+                information (email, username, full name, bio, public key, device ID, connection lists, and 
+                login timestamps) on our servers. This information is essential for maintaining your account 
+                functionality, enabling user discovery, facilitating secure connections with other users, and 
+                protecting your account from unauthorized access. Your account data will be retained indefinitely 
+                as long as your account is active and you continue to use our services.
+            </p>
+            <p>
+                When you request to delete your account, we initiate a 30-day grace period to protect you from 
+                accidental or unauthorized deletion. During this grace period, your account enters a "disabled 
+                state" where your profile becomes invisible to other users, your public key cannot be discovered 
+                by others, and all your data remains on our servers but is marked for deletion. You can cancel 
+                the deletion request and recover your account at any time during this period by simply logging 
+                in again using your email and password. Logging in will automatically cancel the deletion request 
+                and restore your account to its active state. After the 30-day grace period expires, all your 
+                server-stored data (email, username, full name, bio, public key, device ID, connections, and login 
+                history) will be permanently and completely removed from our servers. This deletion is irreversible, 
+                and you will not be able to recover your account or any associated data after this point.
+            </p>
+            <p>
+                Your encrypted secrets (notes, messages, and any other encrypted content) are stored exclusively 
+                on your device and are completely under your control. We have no access to this data and cannot 
+                delete it remotely. You can manage and delete your encrypted content at any time directly through 
+                the app. You can delete individual secrets by removing specific encrypted items one by one, clear 
+                all data by using the app settings to delete all encrypted content at once, or remove all encrypted 
+                data by uninstalling the app from your device. Using your device settings to clear Secrecy's app 
+                data will permanently delete all encrypted content and your private keys. If you clear app data, 
+                cache, or uninstall the app, your encrypted content and private keys will be permanently lost and 
+                cannot be recovered—even if your account remains active on our servers. Always ensure you have 
+                securely backed up any important information before clearing app data or uninstalling.
+            </p>
+            <p>
+                When you rotate your encryption keys (change your public/private key pair), your new public key 
+                is immediately stored on our servers and replaces your old public key. The old public key is not 
+                retained. Your old private key is replaced by the new private key and is not stored on your device. 
+                To ensure you don't lose access to your existing encrypted data, all content that was encrypted with 
+                your old key is automatically re-encrypted with your new key during the key rotation process. This 
+                means you can continue to access all your encrypted content without any data loss after key rotation.
+            </p>
+            <p>
+                When you disconnect from another user (remove them from your friends list), the connection record 
+                is immediately deleted from our servers. However, any encrypted content you previously shared with 
+                that user remains on your device and their device until manually deleted.
+            </p>
+            <p>
+                Your login history (login timestamps and device information) is retained for security monitoring 
+                purposes as long as your account is active. This helps you track which devices have accessed your 
+                account and when. When you delete your account, all login history is permanently removed within 
+                the 30-day deletion period.
+            </p>
 
-            <h2 id="retention">7. Data Retention</h2>
-            <ul>
-                <li><strong>Active Accounts:</strong> Data retained as long as your account is active</li>
-                <li><strong>Account Deletion:</strong> All data deleted within 30 days of account deletion request</li>
-                <li><strong>Backups:</strong> May persist in backups for up to 90 days</li>
-            </ul>
+            <h2 id="rights">How to Control Your Privacy</h2>
+            <p>
+                We believe you should have complete control over your personal information. Secrecy provides 
+                you with comprehensive privacy controls and rights to manage your data both on our servers 
+                and on your device.
+            </p>
+            <p>
+                You can view and access all account-related data we store on our servers at any time. This 
+                includes your email, username, full name, bio, public key, device ID, connection list, and 
+                login history with timestamps. You can access this information directly through the app 
+                settings or by contacting us to request a comprehensive data report. We will provide your 
+                data in a structured, commonly used, and machine-readable format within 30 days of your request.
+            </p>
+            <p>
+                You have the right to delete your account and all associated server data at any time without 
+                providing any reason. When you initiate account deletion through the app settings, your account 
+                immediately enters a "disabled state" where your profile becomes invisible to all other users, 
+                other users cannot discover your public key or send you connection requests, and all your 
+                connections (friends) will see your account as "Deleted" or unavailable. You have a 30-day grace 
+                period to recover your account if you change your mind. To cancel the deletion request and recover 
+                your account during the grace period, simply log in again using your email and password. Logging in 
+                will automatically cancel the deletion request and restore your account to its active state. After 
+                30 days, all your server-stored data is permanently and irreversibly deleted. Account deletion only 
+                removes data stored on our servers. Your encrypted content and private keys stored on your device 
+                remain on your device until you manually delete them through the app or clear the app data.
+            </p>
+            <p>
+                You can request a complete copy of your account information at any time. To export your data, 
+                email us with your request (contact details are provided in the <a href="#contact">Contact Us</a> 
+                section below). We will provide you with a downloadable file containing your account information 
+                (email, username, full name, bio), your public key, your device ID, your connection list (friends), 
+                your login history with timestamps, and account creation date and last modification dates. The 
+                exported data will be in JSON format, which can be easily read and processed. We will deliver your 
+                data export within 30 days of your request.
+            </p>
+            <p>
+                You have the right to update and correct your profile information at any time to ensure it remains 
+                accurate and up-to-date. You can update your display name shown to other users, modify your profile 
+                description visible to others, switch between public and private account visibility, and change your 
+                account password for security purposes directly through the app. Some information cannot be changed 
+                after account creation, including your username and email address, as they serve as your unique 
+                identifiers in the system.
+            </p>
+            <p>
+                You have full control over who can connect with you and access your public key. You can accept 
+                or reject connection requests from other users, remove existing connections (friends) at any time, 
+                set your account to private to restrict public key discovery to friends only, or set your account to public to allow 
+                anyone to discover your public key.
+            </p>
+            <p>
+                You have complete control over your encryption keys. You can generate new public/private key pairs 
+                at any time for enhanced security. Your private keys remain exclusively on your device and are 
+                never transmitted. While we don't provide cloud backup for private keys (for security reasons), 
+                you can manually export and securely store them. When you rotate your keys, your old private key is 
+                replaced by the new private key, and all your existing encrypted content is automatically re-encrypted 
+                with the new key. This ensures you don't lose access to any of your data after key rotation.
+            </p>
+            <p>
+                You have full control over all encrypted content stored on your device. You can view all your 
+                encrypted secrets, notes, and messages stored locally, delete individual encrypted items whenever 
+                you want, and control which apps you share encrypted content with. Your device data is completely independent of your server account. You can delete local data without 
+                affecting your account, and vice versa.
+            </p>
+            <p>
+                You can withdraw your consent to data processing at any time by deleting your account. Once you 
+                delete your account, we will cease all processing of your personal data and permanently remove it 
+                from our servers within 30 days. This is your right under GDPR and CCPA regulations.
+            </p>
+            <p>
+                Currently, we only send emails for essential authentication and account verification purposes, such 
+                as login verification codes (OTP) and account-related security notifications. We do not send push 
+                notifications or marketing emails. These essential authentication and security emails 
+                cannot be disabled as they are necessary for account security and access.
+            </p>
 
-            <h2 id="rights">8. Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-                <li><strong>Access:</strong> View all data associated with your account</li>
-                <li><strong>Delete:</strong> Delete individual secrets or your entire account</li>
-                <li><strong>Export:</strong> Download your encrypted data</li>
-                <li><strong>Correct:</strong> Update your profile information</li>
-                <li><strong>Withdraw Consent:</strong> Delete your account at any time</li>
-            </ul>
+            <h2 id="children">Children's Privacy</h2>
+            <p>
+                Protecting children's privacy is extremely important to us. Secrecy is designed for users 
+                aged 13 years and older. We do not knowingly collect, use, store, or share personal information 
+                from children under the age of 13 years. Our app is not directed toward children, and we do not 
+                intend to collect any information from anyone we know to be under 13 years of age.
+            </p>
+            <p>
+                When you create an account, you affirm that you are at least 13 years old. While we don't 
+                explicitly verify age during account creation, we rely on users to provide accurate information 
+                about their eligibility to use the service.
+            </p>
+            <p>
+                If you are a parent or guardian and you become aware that your child under the age of 13 has 
+                created an account or provided us with personal information without your consent, please contact 
+                us immediately (contact details are provided in the <a href="#contact">Contact Us</a> section below). 
+                We will take prompt action to verify the age of the account holder, immediately suspend the account 
+                if the user is confirmed to be under 13, permanently delete all personal information associated with 
+                that account from our servers, and notify you once the account and data have been removed.
+            </p>
+            <p>
+                We are committed to complying with the Children's Online Privacy Protection Act (COPPA) in the 
+                United States and similar child protection laws in other jurisdictions. If we become aware that we 
+                have inadvertently collected personal information from a child under 13, we will delete that 
+                information as quickly as possible.
+            </p>
 
-            <h2 id="children">9. Children's Privacy</h2>
-            <p>Secrecy is not intended for children under 13. We do not knowingly collect 
-            personal information from children under 13. If you believe we have collected 
-            information from a child under 13, please contact us immediately.</p>
+            <h2 id="international">International Data Transfers</h2>
+            <p>
+                Secrecy is a global application that can be used by users around the world. To provide our 
+                services to you regardless of your location, your account information may be transferred to, 
+                stored in, and processed in countries outside your country of residence. This is necessary to 
+                maintain our services and ensure you can access your account from anywhere.
+            </p>
+            <p>
+                We use Supabase as our backend service provider, which hosts our database infrastructure on 
+                Amazon Web Services (AWS) servers. These servers may be located in various countries and regions, 
+                including but not limited to the United States, European Union, and other jurisdictions. The 
+                specific location of data storage depends on Supabase's infrastructure configuration.
+            </p>
+            <p>
+                Different countries have different data protection laws, and the country where your data is stored 
+                may have different privacy protections than your home country. However, we ensure that regardless 
+                of where your data is stored, we apply the same high standards of data protection and security 
+                measures described in this Privacy Policy to all user data. For users in the European Economic 
+                Area (EEA), United Kingdom, and Switzerland, we ensure that any international data transfers 
+                comply with GDPR requirements, including the use of Standard Contractual Clauses (SCCs) approved 
+                by the European Commission. All data transmitted between your device and our servers (regardless 
+                of location) is encrypted using TLS/HTTPS, protecting it from interception during transfer. Your 
+                data stored on servers is protected with industry-standard encryption and access controls, 
+                regardless of the server's physical location. Our service providers (like Supabase and AWS) are 
+                contractually obligated to maintain appropriate security measures and comply with applicable data 
+                protection laws, including GDPR and CCPA.
+            </p>
+            <p>
+                It's important to note that your encrypted secrets, notes, and messages are never transferred 
+                internationally because they never leave your device. Only your account information (email, name, 
+                bio, public keys) and metadata (device ID, login timestamps) are stored on our servers and may be 
+                subject to international transfer.
+            </p>
+            <p>
+                In some cases, law enforcement or government authorities in the country where data is stored may 
+                have the legal right to access data stored on servers in their jurisdiction. However, we can only 
+                provide access to account information stored on our servers—we cannot provide access to your 
+                encrypted content or private keys because we don't have them.
+            </p>
+            <p>
+                Regardless of where your data is stored or processed, you retain all the rights described in this 
+                Privacy Policy, including the right to access, correct, export, and delete your data.
+            </p>
 
-            <h2 id="international">10. International Data Transfers</h2>
-            <p>Your data may be transferred to and stored in countries outside your country 
-            of residence. We ensure appropriate safeguards are in place to protect your 
-            information in compliance with applicable data protection laws.</p>
+            <h2 id="third-party">Third-Party Services</h2>
+            <p>
+                To provide our services, we rely on certain third-party service providers who process your 
+                account information on our behalf. We carefully select service providers that maintain high 
+                standards of security and privacy, and we ensure they only access the minimum data necessary 
+                to perform their functions.
+            </p>
+            <p>
+                Supabase Inc. is a backend-as-a-service platform that provides database hosting and authentication 
+                infrastructure. We use Supabase to provide critical functions including authentication that handles 
+                user account creation, login, password management, and two-factor authentication via email OTP; 
+                database hosting that stores your account information (email, username, full name, bio, public keys, 
+                device ID, connections, login timestamps); security features that provide row-level security policies 
+                and access controls to protect your data; and infrastructure management that handles server 
+                infrastructure, backups, and ensures high availability of our services.
+            </p>
+            <p>
+                Supabase has access only to the account information and metadata stored on their servers, which includes 
+                your email address, username, full name, and bio, your public encryption keys (not private keys), your 
+                device ID and login timestamps, and your connection list (friends). Supabase cannot access your encrypted 
+                secrets, notes, or messages (stored only on your device), your private encryption keys (never leave your 
+                device), content you share via external apps, or any data encrypted on your device.
+            </p>
+            <p>
+                Supabase uses Amazon Web Services (AWS) as its underlying cloud infrastructure provider. This means your 
+                data is ultimately stored on AWS servers, which are subject to AWS security policies and data center 
+                protections. Supabase has its own privacy policy that governs how they handle data. You can review their 
+                privacy practices at: 
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">
+                    https://supabase.com/privacy
+                </a>
+            </p>
+            <p>
+                Supabase implements industry-standard security measures including encryption in transit (TLS/HTTPS), 
+                encryption at rest for stored data, regular security audits and penetration testing, compliance with 
+                SOC 2 Type II standards, and GDPR and CCPA compliance. Supabase acts as a "data processor" on our 
+                behalf, meaning they process your data only according to our instructions and for the purposes we 
+                specify. They are contractually prohibited from using your data for their own purposes or sharing it 
+                with other parties without authorization.
+            </p>
+            <p>
+                Your data may be stored on Supabase/AWS servers in various regions worldwide. For more information 
+                about data location and international transfers, see the "International Data Transfers" section above.
+            </p>
+            <p>
+                Apart from Supabase/AWS, we do not share your personal information with any other third-party services, 
+                analytics providers, advertising networks, or data brokers. We do not use tracking pixels, third-party 
+                cookies, or analytics services that collect your data. Your encrypted content never passes through any 
+                third-party services, it remains exclusively on your device.
+            </p>
+            <p>
+                If we ever add new third-party service providers or change our existing providers, we will update this 
+                Privacy Policy and notify you according to the process described in the "Changes to This Privacy Policy" 
+                section above.
+            </p>
 
-            <h2 id="changes">11. Changes to This Privacy Policy</h2>
-            <p>We may update this privacy policy from time to time. We will notify you of 
-            any changes by:</p>
-            <ul>
-                <li>Updating the "Last updated" date at the top of this policy</li>
-                <li>Sending an in-app notification for significant changes</li>
-                <li>Requiring acceptance for material changes</li>
-            </ul>
+            <h2 id="compliance">Legal Compliance and Regulatory Standards</h2>
+            <p>
+                We are committed to complying with all applicable privacy laws and regulations in the 
+                jurisdictions where we operate and where our users are located.
+            </p>
+            <p>
+                For users in the European Economic Area (EEA), United Kingdom, and Switzerland, we comply with 
+                General Data Protection Regulation (GDPR) requirements, including lawful basis for data processing 
+                (consent and legitimate interests), data minimization, collecting only necessary information, right 
+                to access, rectification, erasure, and data portability, right to restrict processing and object to 
+                processing, data protection by design and by default, secure international data transfers using 
+                Standard Contractual Clauses, and breach notification within 72 hours when required.
+            </p>
+            <p>
+                For California residents, we comply with the California Consumer Privacy Act (CCPA) and California 
+                Privacy Rights Act (CPRA), providing right to know what personal information we collect, right to 
+                delete personal information, right to opt-out of sale (note: we do not sell personal information), 
+                right to non-discrimination for exercising privacy rights, right to correct inaccurate information, 
+                and right to limit use of sensitive personal information.
+            </p>
+            <p>
+                We comply with the Children's Online Privacy Protection Act (COPPA) by not knowingly collecting 
+                personal information from children under 13 years of age. Our service is not directed at children, 
+                and we take immediate action to delete any data if we discover it belongs to a child under 13.
+            </p>
+            <p>
+                We adhere to Google Play's data safety requirements, including transparent disclosure of data 
+                collection and usage practices, secure data handling and transmission, user consent for data 
+                collection where required, compliance with restricted permissions policies, and data deletion and 
+                retention policies.
+            </p>
+            <p>
+                We request only the minimum necessary device permissions required for our app to function. Internet 
+                access is required to communicate with our servers for authentication and user discovery. The app 
+                stores encrypted content in protected storage on your device without requiring storage permissions. 
+                We do NOT request unnecessary permissions such as location, camera, microphone, contacts, storage, 
+                or SMS access.
+            </p>
+            <p>
+                We follow recognized security frameworks and best practices including NIST Cybersecurity Framework 
+                guidelines, OWASP Mobile Application Security standards, industry-standard encryption algorithms 
+                (AES-256-GCM, X25519), secure key storage using Android Keystore, and regular security assessments 
+                and updates.
+            </p>
+            <p>
+                We may be required to disclose user information in response to valid legal requests from law 
+                enforcement agencies or government authorities, such as court orders, search warrants, 
+                national security requests, and other legally binding requests. In such cases, we will only provide 
+                the minimum information required by law, which is limited to account information stored on our servers 
+                (email, username, name, bio, public keys, device ID, login timestamps). We cannot provide encrypted 
+                content or private keys because we don't have access to them. Where legally permitted, we will notify 
+                you of such requests unless prohibited by law or court order.
+            </p>
 
-            <h2 id="third-party">12. Third-Party Services</h2>
-            <h3>Supabase (Backend Service)</h3>
-            <ul>
-                <li><strong>Provider:</strong> Supabase Inc.</li>
-                <li><strong>Purpose:</strong> Database hosting and authentication</li>
-                <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
-                <li><strong>Data Access:</strong> Encrypted data only; cannot decrypt secrets</li>
-            </ul>
+            <h2 id="changes">Changes to This Privacy Policy</h2>
+            <p>
+                As our app evolves and privacy laws change, we may need to update this Privacy Policy from 
+                time to time to reflect changes in our practices, services, legal requirements, or for other 
+                operational, legal, or regulatory reasons. We are committed to keeping you informed about any 
+                changes to how we collect, use, and protect your personal information.
+            </p>
+            <p>
+                When we make changes to this Privacy Policy, we will notify you through multiple channels to 
+                ensure you're aware of the updates. We will always update the "Effective" and "Last updated" 
+                dates at the top of this Privacy Policy to reflect when the changes take effect and when they 
+                were last modified. For significant or material changes that affect how we collect, use, or 
+                share your personal information, we will send you an in-app notification when you next open the 
+                app. This notification will provide a summary of the key changes and direct you to the full 
+                updated policy. For major changes that substantially affect your privacy rights or data handling 
+                practices, we will also send an email notification to the email address associated with your 
+                account. This email will explain the changes and how they impact you. For material changes that 
+                significantly alter your rights or our data practices, we may require you to review and accept 
+                the updated Privacy Policy before you can continue using the app. You will be presented with the 
+                updated policy and asked to explicitly agree to the new terms. We maintain previous versions of 
+                our Privacy Policy so you can review what has changed over time.
+            </p>
+            <p>
+                We distinguish between different types of policy updates. Minor changes include small updates 
+                such as clarifications, typo corrections, or formatting improvements that don't affect your rights 
+                or our practices. These changes only require updating the "Last updated" date. Significant changes 
+                are updates that modify our data collection, usage, or sharing practices in meaningful ways. These 
+                changes trigger in-app notifications. Material changes are substantial modifications that 
+                significantly affect your privacy rights, such as collecting new types of data, sharing data with 
+                new third parties, or changing data retention periods. These changes require email notification 
+                and may require your explicit acceptance.
+            </p>
+            <p>
+                If we make material changes to this Privacy Policy that you disagree with, you have several options. 
+                By continuing to use Secrecy after being notified of changes, you accept the updated Privacy Policy. 
+                If you have concerns about the changes, you can contact us to discuss your concerns before deciding 
+                whether to continue using the service. If you do not agree with the updated policy, you have the 
+                right to delete your account and discontinue using our services. We will respect your decision and 
+                process your account deletion according to our Data Retention policy.
+            </p>
+            <p>
+                We encourage you to periodically review this Privacy Policy to stay informed about how we protect 
+                your information. You can always find the most current version of this policy on our website and 
+                within the app settings.
+            </p>
 
-            <h2 id="contact">13. Contact Us</h2>
-            <p>If you have questions about this privacy policy or your data, contact us:</p>
-            <ul>
-                <li><strong>Email:</strong> YOUR_EMAIL@gmail.com</li>
-                <li><strong>App:</strong> Secrecy for Android</li>
-                <li><strong>Developer:</strong> YOUR_NAME</li>
-            </ul>
-
-            <h2 id="compliance">14. Legal Compliance</h2>
-            <p>This app complies with:</p>
-            <ul>
-                <li>General Data Protection Regulation (GDPR)</li>
-                <li>California Consumer Privacy Act (CCPA)</li>
-                <li>Google Play Developer Program Policies</li>
-                <li>Android Permissions Best Practices</li>
-            </ul>
+            <h2 id="contact">Contact Us</h2>
+            <p>
+                We value your privacy and are committed to addressing any questions, concerns, or requests 
+                you may have regarding this Privacy Policy or how we handle your personal information.
+            </p>
+            <p>
+                For general privacy questions and concerns, you can email us at privacyfocuseddev@gmail.com. 
+                This is our primary contact method. We typically respond to privacy-related inquiries within 
+                48-72 hours during business days. Please include "Privacy Policy" or "Data Request" in your 
+                email subject line to ensure your message is routed to the appropriate team.
+            </p>
+            <p>
+                If you wish to exercise your privacy rights (access, correction, deletion, export, etc.), 
+                please email us at privacyfocuseddev@gmail.com with your full name and the email address 
+                associated with your account, a clear description of your request (e.g., "Delete my account," 
+                "Export my data," etc.), and verification information to confirm your identity (we may ask 
+                security questions to prevent unauthorized access). We will respond to verified requests within 
+                30 days as required by applicable privacy laws (GDPR, CCPA, etc.). For complex requests, we may 
+                extend this period by an additional 30 days with notification.
+            </p>
+            <p>
+                For security concerns or data breaches, you can email us at privacyfocuseddev@gmail.com and mark 
+                your email as "URGENT - SECURITY". If you discover a security vulnerability or suspect unauthorized 
+                access to your account, please contact us immediately. We take security reports very seriously and 
+                will investigate promptly.
+            </p>
+            <p>
+                If you are located in the European Economic Area, United Kingdom, or Switzerland and wish to 
+                exercise your GDPR rights or file a complaint, you can contact us directly at 
+                privacyfocuseddev@gmail.com.
+            </p>
+            <p>
+                California residents can exercise their CCPA rights by emailing privacyfocuseddev@gmail.com 
+                with "CCPA Request" in the subject line.
+            </p>
+            <p>
+                Your privacy is important to us, and we're committed to being transparent and responsive. Don't 
+                hesitate to reach out with any questions, no matter how small they may seem. We prefer to address 
+                your concerns proactively rather than have you remain uncertain about how your data is handled.
+            </p>
         </main>
     </div>
 
@@ -222,31 +645,24 @@
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    
-                    // Update active state
-                    document.querySelectorAll('.nav-list a').forEach(a => a.classList.remove('active'));
-                    this.classList.add('active');
                 }
             });
         });
 
-        // Highlight current section in nav on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            document.querySelectorAll('h2[id]').forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
 
-            document.querySelectorAll('.nav-list a').forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
-                }
-            });
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
         });
     </script>
 </body>
